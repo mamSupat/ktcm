@@ -1,0 +1,210 @@
+* {
+  box-sizing:border-box
+}
+
+body {
+  margin:0;
+  font:15px Arial,sans-serif;
+  color:#222;
+  background:#f4f4f4
+}
+
+button,input,select,textarea {
+  font:inherit;
+  padding:8px;
+  border:1px solid #bbb;
+  border-radius:4px
+}
+
+button {
+  background:#245a8d;
+  color:white;
+  border:0;
+  cursor:pointer
+}
+
+button:disabled {
+  opacity:.5
+}
+
+input,select,textarea {
+  width:100%;
+  background:white
+}
+
+label {
+  display:block;
+  margin:8px 0
+}
+
+h1,h2,h3 {
+  margin:8px 0 14px
+}
+
+a {
+  color:#14558a
+}
+
+.page {
+  max-width:1100px;
+  margin:20px auto;
+  padding:18px;
+  background:white;
+  border:1px solid #ddd
+}
+
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #ddd;
+  padding-bottom:12px;
+  margin-bottom:16px
+}
+
+nav {
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:12px 0
+}
+
+nav button {
+  background:#555
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px
+}
+
+.panel {
+  border:1px solid #ddd;
+  padding:12px;
+  border-radius:5px;
+  margin:12px 0
+}
+
+form {
+  display:grid;
+  gap:8px;
+  max-width:520px
+}
+
+.row {
+  display:flex;
+  gap:8px;
+  align-items:center;
+  flex-wrap:wrap
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+  margin:12px 0
+}
+
+th,td {
+  padding:8px;
+  border:1px solid #ccc;
+  text-align:left
+}
+
+th {
+  background:#eee
+}
+
+.msg {
+  padding:8px;
+  background:#fff3cd;
+  margin:8px 0
+}
+
+.error {
+  background:#f8d7da
+}
+
+small,.muted {
+  color:#666
+}
+
+.actions {
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap
+}
+
+@media(max-width:600px) {
+  .page {
+  margin:0;
+  padding:12px
+}
+
+table {
+  font-size:13px
+}
+
+td,th {
+  padding:5px
+}
+
+
+}
+
+.subpanel {
+  border:1px solid #e2e2e2;
+  border-left:4px solid #245a8d;
+  padding:12px;
+  margin:12px 0;
+  background:#fafafa
+}
+
+textarea {
+  min-height:70px;
+  resize:vertical
+}
+
+button {
+  margin:3px 2px
+}
+
+img {
+  object-fit:contain
+}
+
+@media print {
+  button,input,select,textarea {
+  display:none!important
+}
+
+.page {
+  border:0;
+  margin:0;
+  max-width:none
+}
+
+.panel {
+  break-inside:avoid
+}
+
+
+}
+
+@media(max-width:600px) {
+  table {
+  display:block;
+  overflow-x:auto;
+  white-space:nowrap
+}
+
+.grid {
+  grid-template-columns:1fr
+}
+
+.row {
+  align-items:stretch
+}
+
+
+}
